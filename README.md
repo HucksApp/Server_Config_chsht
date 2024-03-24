@@ -1,6 +1,33 @@
 # Server_Config_chsht
 
 
+## Server Configuration Management
+
+refers to the process of systematically handling changes to a system in a way that it maintains integrity over time
+most popular configuration management tools available  
+* Ansible
+* Puppet
+* Chef
+
+Property              |	Ansible       |	Puppet                      |	Chef
+----------------------|---------------|-----------------------------|---------
+Script Language	      | YAML	        | Custom DSL based on Ruby    |	Ruby
+Infrastructure	      | Controller machine applies configuration on nodes via SSH | 	Puppet Master synchronizes configuration on Puppet Nodes |	Chef Workstations push configuration to Chef Server, from which the Chef Nodes will be updated
+Requires specialized software for nodes |	No  |	Yes	 | Yes
+Provides centralized point of control	| No. Any computer can be a controller |	Yes, via Puppet Master	 | Yes, via Chef Server
+Script Terminology	| Playbook / Roles	| Manifests / Modules	 | Recipes / Cookbooks
+Task Execution Order	| Sequential	| Non-Sequential	| Sequential
+
+
+## Ansible
+
+
+
+
+
+
+
+
 
 
 
