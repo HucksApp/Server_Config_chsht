@@ -3,7 +3,8 @@
 
 ## Server Configuration Management
 
-refers to the process of systematically handling changes to a system in a way that it maintains integrity over time
+refers to the process of systematically handling changes to a system in a way that it maintains integrity over time.
+
 most popular configuration management tools available  
 * Ansible
 * Puppet
@@ -18,7 +19,7 @@ Provides centralized point of control	| No. Any computer can be a controller |	Y
 Script Terminology	| Playbook / Roles	| Manifests / Modules	 | Recipes / Cookbooks
 Task Execution Order	| Sequential	| Non-Sequential	| Sequential
 
-
+------------------------------------------------------------------------------
 ## Ansible
 
 
