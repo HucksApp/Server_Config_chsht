@@ -105,3 +105,31 @@ bar.example.com.        CNAME  foo.example.com.
 foo.example.com.        A      192.0.2.23
 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+# SSH
+The home `~` directory holds all hidden eviroments. .ssh/  .bashrc ......
+The .ssh folder contains ***authorized_keys*** thats holds authorised public keys for login, when ssh is set as default login
+
+
+
+* To generate key use `ssh-keygen`
+  ssh-keygen atempts to overide or create a default key pairs as ***id_rsa*** as private key and ***id_rsa.pub*** as public key
+  if name option not stated
+  Command           |     Option             |        Description
+  ------------------|------------------------|-----------------------
+  `ssh-keygen`      |  -                     |
+
+
+       
