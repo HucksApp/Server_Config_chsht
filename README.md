@@ -41,13 +41,14 @@ Task Execution Order	| Sequential	| Non-Sequential	| Sequential
 ### structure
 ```
 - name: This is a task
-  module: option=value option=value 
+  module: option=value option=value ..
 ```
 ```
 - name: This is a task
     module:
       option: value
       option: value
+      ..... : ....
 ```
  * name: task name
  * module: built-in Ansible module  e.g `apt`
