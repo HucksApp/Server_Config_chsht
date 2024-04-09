@@ -61,7 +61,7 @@ YAML files containing a series of ***Task*** directives
 
 ```
 ---
-- name: <book 1>
+- name: <play 1>
   <default_config>: <default_config_value>
   <default_config>: <default_config_value>
  .............    : ...............
@@ -89,10 +89,13 @@ YAML files containing a series of ***Task*** directives
       .....: .....
 
 
-- name: <book 2>
+- name: <play 2>
   <default_config>: <value>
-  <default_config>: <value>
- .............    : ...............
+  <default_config>:
+     <option>: <value>
+     <option>: <value>
+     ....... : ......
+ .............: ...............
 
   tasks:
   - name: <Task 1>
@@ -116,6 +119,76 @@ YAML files containing a series of ***Task*** directives
       .....: .....
       .....: .....
 ```
+
+## Variables
+
+
+* Define  
+```
+  vars:
+      <var_name>: <value>
+```
+* Reference
+```
+      <option>: "{{var_name}}"
+```
+* Types
+
+  * Boolean variables -> `true/false` or `t/f`or `1/0` or `yes/no` or `y/n` or `True/False`
+  * List variables ->
+       ### DEFINE
+ 
+       ```
+           <list_name>: [<value 1>, <value 2>, ....]
+       ```
+       OR 
+       
+       ```
+         <list_name>:
+            - <value 1>
+            - <value 2>
+            - ......
+       ```
+        
+       ### Reference
+       
+       
+       ```
+             <option>: {{list_name[<item index>]}}
+       ```
+  * Dictionary
+
+     ### DEFINE
+      
+    ```
+      <dict_name>:
+         <key1>: <value 1>
+         <key2>: <value 2>
+         ..... : ......
+    ```
+    
+    
+    ### Reference
+    
+    
+    ```
+          <option>: {{dict_name.<key>}}
+    ```
+    OR
+    ```
+          <option>: {{dict_name['<key>']}}
+    ```
+
+  * Registered Variable -> You can create variables from the output of an Ansible task with the task keyword `register`
+    ```
+     register:  <value>
+    ```
+  
+
+
+
+
+
 
 
 
