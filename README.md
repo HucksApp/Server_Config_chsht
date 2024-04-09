@@ -43,6 +43,7 @@ Task Execution Order	| Sequential	| Non-Sequential	| Sequential
 - name: <This is a task>
   <module>: <option>=<value> <option>=<value> ..
 ```
+OR
 ```
 - name: <This is a task>
     <module>:
