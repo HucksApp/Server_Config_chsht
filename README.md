@@ -40,14 +40,14 @@ Task Execution Order	| Sequential	| Non-Sequential	| Sequential
  Typically involves the usage of a module or the execution of a raw command
 ### structure
 ```
-- name: This is a task
-  module: option=value option=value ..
+- name: <This is a task>
+  <module>: <option>=<value> <option>=<value> ..
 ```
 ```
-- name: This is a task
-    module:
-      option: value
-      option: value
+- name: <This is a task>
+    <module>:
+      <option>: <value>
+      <option>: <value>
       ..... : ....
 ```
  * name: task name
@@ -56,7 +56,65 @@ Task Execution Order	| Sequential	| Non-Sequential	| Sequential
 
 ### Playbook 
 
+YAML files containing a series of ***Task*** directives 
 
+```
+---
+- name: <book 1>
+  <default_config>: <default_config_value>
+  <default_config>: <default_config_value>
+ .............    : ...............
+
+  tasks:
+  - name: <Task 1>
+    <module>:
+      <option>: <value>
+      <option>: <value>
+      ....... : ......
+
+ - name: <Task 2>
+    <module>:
+      <option>: <value>
+      <option>: <value>
+      ....... : ......
+
+ - name: <Task 3>
+   <module>: <option>=<value> <option>=<value> ..
+
+ - ....: ....
+    .....:
+      .....: .....
+      .....: .....
+      .....: .....
+
+
+- name: <book 2>
+  <default_config>: <value>
+  <default_config>: <value>
+ .............    : ...............
+
+  tasks:
+  - name: <Task 1>
+    <module>:
+      <option>: <value>
+      <option>: <value>
+      ....... : ......
+
+ - name: <Task 2>
+    <module>:
+      <option>: <value>
+      <option>: <value>
+      ....... : ......
+
+ - name: <Task 3>
+   <module>: <option>=<value> <option>=<value> ..
+
+ - ....: ....
+    .....:
+      .....: .....
+      .....: .....
+      .....: .....
+```
 
 
 
