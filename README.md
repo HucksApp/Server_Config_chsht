@@ -212,7 +212,7 @@ Comments `#` ->  Anything after is ignored
 ```
 $<variable name> = <value>
 ```
-### Variable Assignment and Unpacking
+### Variable Unpacking
 
 ```
 [$<var1>, $<var2>] = {$<var1> => <value 1>, $<var2> => <value 2>}
