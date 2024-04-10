@@ -236,7 +236,7 @@ This form the fundamental unit for modeling system configurations.
 ### RESOURCES TYPE
 
 
-* file -> file type can manage normal files, directories, and symlinks `file`
+* file -> file type can manage files, directories, and symlinks `file`
   
 ```
 # file resource attributes
