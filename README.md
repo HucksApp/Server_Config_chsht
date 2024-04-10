@@ -227,10 +227,10 @@ $<variable name>
 ```
 
 ## Resources
-resource refer to an aspect of a system, Each resource has ***attributes*** that described  the desired state for that system resource.
+resource refer to an aspect of a system, each resource has ***attributes*** that described  the desired state for that system resource.
 This form the fundamental unit for modeling system configurations.
 ```
-<RESOURCE TYPE> { '<TITLE>': <ATTRIBUTE> => <VALUE>, }
+<RESOURCE TYPE> { '<TITLE>': <ATTRIBUTE> => <VALUE>, .....: .... }
 ```
 
 ### RESOURCES TYPE
