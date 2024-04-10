@@ -277,7 +277,7 @@ file { 'resource title':
   # ...plus any applicable metaparameters.
 }
 ```
-* filebucket -> For storing and retrieving file content by MD5 checksum. mainly for ***Content backups**
+* filebucket -> For storing and retrieving file content by MD5 checksum. mainly for ***Content backups***
 
 ```
  filebucket { 'resource title':
